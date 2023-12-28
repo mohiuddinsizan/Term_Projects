@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rds.foodhub.client.HomeController">
+   <children>
+      <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" layoutX="580.0" layoutY="83.0" prefHeight="22.0" prefWidth="90.0" text="Username">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="button" layoutX="612.0" layoutY="487.0" mnemonicParsing="false" onAction="#logoutAction" text="Logout" />
+      <Label layoutX="14.0" layoutY="10.0" prefHeight="36.0" prefWidth="66.0" text="HOME">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="restaurantTable" layoutX="166.0" layoutY="83.0" prefHeight="380.0" prefWidth="410.0" visible="false">
+        <columns>
+          <TableColumn fx:id="restaurantNameColumn" prefWidth="147.0" text="Name" />
+          <TableColumn fx:id="restaurantScoreColumn" prefWidth="65.60003662109375" text="Score" />
+            <TableColumn fx:id="restaurantPriceColumn" prefWidth="50.39996337890625" text="Price" />
+            <TableColumn fx:id="restaurantZipcodeColumn" prefWidth="71.199951171875" text="Zipcode" />
+            <TableColumn fx:id="restaurantCategoriesColumn" prefWidth="192.79998779296875" text="Categories" />
+        </columns>
+      </TableView>
+      <Button fx:id="SearchRestaurant" layoutX="580.0" layoutY="108.0" mnemonicParsing="false" onAction="#searchRestaurant" prefHeight="47.0" prefWidth="90.0" text="Restaurant" />
+      <Button fx:id="FoodSearch" layoutX="18.0" layoutY="64.0" mnemonicParsing="false" onAction="#SearchFood" prefHeight="47.0" prefWidth="90.0" text="Food" />
+      <Button fx:id="searchfoodbycat" layoutX="18.0" layoutY="202.0" mnemonicParsing="false" onAction="#searchFoodByCategory" prefHeight="36.0" prefWidth="144.0" text="By Category" visible="false" />
+      <Button fx:id="searchfoodbycatandrest" layoutX="18.0" layoutY="245.0" mnemonicParsing="false" onAction="#searchFoodByCategoryAndRestaurant" prefHeight="36.0" prefWidth="144.0" text="By Category &amp; Restaurant" visible="false" />
+      <Button fx:id="searchfoodbyprice" layoutX="18.0" layoutY="288.0" mnemonicParsing="false" onAction="#searchFoodByPrice" prefHeight="36.0" prefWidth="144.0" text="By Price Range" visible="false" />
+      <Button fx:id="allfoods" layoutX="18.0" layoutY="426.0" mnemonicParsing="false" onAction="#searchAllFoods" prefHeight="36.0" prefWidth="144.0" text="All Food" visible="false" />
+      <Button fx:id="costlyFood" layoutX="18.0" layoutY="383.0" mnemonicParsing="false" onAction="#costliestFood" prefHeight="36.0" prefWidth="144.0" text="Costliest Food" visible="false" />
+      <Button fx:id="searchfoodbypriceandrest" layoutX="18.0" layoutY="335.0" mnemonicParsing="false" onAction="#searchFoodByPriceandRestaurant" prefHeight="36.0" prefWidth="144.0" text="By Price &amp; Restaurant" visible="false" />
+      <Button fx:id="byfoodName" layoutX="18.0" layoutY="114.0" mnemonicParsing="false" onAction="#searchFoodbyName" prefHeight="36.0" prefWidth="144.0" text="By Name" visible="false" />
+      <Button fx:id="foodsearchByrest" layoutX="18.0" layoutY="157.0" mnemonicParsing="false" onAction="#searchFoodByRestaurant" prefHeight="36.0" prefWidth="144.0" text="By Name &amp; Restaurant" visible="false" />
+      <Button fx:id="allrests" layoutX="580.0" layoutY="390.0" mnemonicParsing="false" onAction="#allRestaurant" prefHeight="36.0" prefWidth="90.0" text="All Restaurant" visible="false" />
+      <Button fx:id="searchRestaurentByzip" layoutX="580.0" layoutY="347.0" mnemonicParsing="false" onAction="#searchRestaurentByZipCode" prefHeight="36.0" prefWidth="90.0" text="By Zipcode" visible="false" />
+      <Button fx:id="searchRestaurentByprc" layoutX="580.0" layoutY="299.0" mnemonicParsing="false" onAction="#searchRestaurentByPrice" prefHeight="36.0" prefWidth="90.0" text="By Price" visible="false" />
+      <Button fx:id="searchRestaurentBycats" layoutX="580.0" layoutY="252.0" mnemonicParsing="false" onAction="#searchRestaurentByCategory" prefHeight="36.0" prefWidth="90.0" text="By Category" visible="false" />
+      <Button fx:id="searchRestaurentByscore" layoutX="580.0" layoutY="209.0" mnemonicParsing="false" onAction="#searchRestaurentByScore" prefHeight="36.0" prefWidth="90.0" text="By Score" visible="false" />
+      <Button fx:id="byName" layoutX="580.0" layoutY="166.0" mnemonicParsing="false" onAction="#searchRestaurentByName" prefHeight="36.0" prefWidth="90.0" text="By Name" visible="false" />
+      <TextField fx:id="textfield2" layoutX="195.0" layoutY="474.0" prefHeight="26.0" prefWidth="129.0" visible="false" />
+      <TextField fx:id="textfield1" layoutX="341.0" layoutY="474.0" prefHeight="26.0" prefWidth="122.0" visible="false" />
+      <Label fx:id="enterRange" layoutX="129.0" layoutY="481.0" prefHeight="18.0" prefWidth="66.0" text="Enter Range" visible="false" />
+      <Button fx:id="seacrh" layoutX="470.0" layoutY="474.0" mnemonicParsing="false" onAction="#startSearch" text="Search" visible="false" />
+      <Label fx:id="restNamelabel" layoutX="195.0" layoutY="503.0" prefHeight="18.0" prefWidth="122.0" text="Enter Restaurant Name" visible="false" />
+      <Label fx:id="foodnamelabel" layoutX="344.0" layoutY="503.0" prefHeight="18.0" prefWidth="98.0" text="Enter Food Name" visible="false" />
+      <Label fx:id="CategoryLabel" layoutX="342.0" layoutY="502.0" prefHeight="18.0" prefWidth="81.0" text="Enter Category" visible="false" />
+      <Label fx:id="maxprice" layoutX="348.0" layoutY="503.0" prefHeight="18.0" prefWidth="90.0" text="Enter Max Price" visible="false" />
+      <Label fx:id="minprice" layoutX="195.0" layoutY="503.0" prefHeight="18.0" prefWidth="82.0" text="Enter Min Price" visible="false" />
+      <Label fx:id="minscore" layoutX="195.0" layoutY="503.0" prefHeight="18.0" prefWidth="82.0" text="Min Score" visible="false" />
+      <Label fx:id="maxscore" layoutX="341.0" layoutY="503.0" prefHeight="18.0" prefWidth="82.0" text="Max Score" visible="false" />
+      <Label fx:id="zipcode" layoutX="341.0" layoutY="499.0" prefHeight="22.0" prefWidth="82.0" text="Enter ZipCode" visible="false" />
+      <TableView fx:id="foodtable" layoutX="166.0" layoutY="81.0" prefHeight="380.0" prefWidth="410.0" visible="false">
+        <columns>
+          <TableColumn fx:id="foodname" prefWidth="126.4000244140625" text="Food Name" />
+          <TableColumn fx:id="foodid" prefWidth="84.0" text="Restaurant Id" />
+            <TableColumn fx:id="foodprice" minWidth="8.79998779296875" prefWidth="80.79998779296875" text="Food Price" />
+            <TableColumn fx:id="foodcategory" prefWidth="117.60001220703123" text="Category" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="enjoyimage" fitHeight="380.0" fitWidth="410.0" layoutX="166.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@enjoy.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="fooditemselection" layoutX="169.0" layoutY="39.0" mnemonicParsing="false" onAction="#selectFoodItems" prefHeight="26.0" prefWidth="82.0" text="Select Food" visible="false" />
+      <Button fx:id="orderplacebutton" layoutX="463.0" layoutY="39.0" mnemonicParsing="false" onAction="#placeOrder" prefHeight="26.0" prefWidth="82.0" text="Place Order" visible="false" />
+      <ImageView fx:id="shahrukh" fitHeight="72.0" fitWidth="90.0" layoutX="580.0" layoutY="10.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@shahrukh.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="salman" fitHeight="72.0" fitWidth="90.0" layoutX="580.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@salman.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sizan" fitHeight="72.0" fitWidth="90.0" layoutX="580.0" layoutY="10.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@sizan.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image" fitHeight="72.0" fitWidth="90.0" layoutX="580.0" layoutY="10.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
