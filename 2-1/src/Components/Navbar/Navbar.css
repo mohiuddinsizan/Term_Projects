@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+/* General styles for all elements */
+* {
+  margin: 0;
+  font-family: 'Lemon', sans-serif;
+  color: black;
+}
+
+/* Media query for specific screen width */
+@media screen and (max-width: 600px) {
+  /* Styles specific to screens with a width of 600 pixels or less */
+  .navbar {
+    max-width: 100%; /* Adjust as needed for responsiveness */
+  }
+
+  /* Additional responsive styles can be added here */
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0px 1px 3px -2px black;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-logo p{
+    color: crimson;
+    font-size: 38px;
+    font-weight: 600;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: magenta;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.cats :hover{
+    color: crimson;
+    background: crimson;
+}
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: red;
+}
+
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-login-cart button{
+    width: 157px;
+    height: 58px;
+    margin-left: 10px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 75px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background: crimson;
+    cursor: pointer;
+}
+
+.nav-login-cart button:active{
+    background: lightgray;
+}
+
+.nav-cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -40px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}
+.blocker {
+    margin-top: 20px; /* Add margin at the top to create space */
+  }
+
+  .search-bar {
+    margin-left: 20px; /* Adjust the margin to create space between the search bar and other elements */
+    margin-top: 10px;
+}
+  
+  .search-bar form {
+    display: flex;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    height: 30px;
+    width: 280px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    color: white;
+    background: crimson;
+    border-radius: 10px;
+    cursor: pointer;
+  }

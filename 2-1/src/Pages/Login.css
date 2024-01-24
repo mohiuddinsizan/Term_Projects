@@ -1,0 +1,71 @@
+.login{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+    height: 80hv;
+    background: crimson;
+    padding-top: 100px;
+}
+.login-container{
+    width: 580px;
+    height: 600px;
+    background: crimson;
+    margin: auto;
+    padding: 40px 60px;
+}
+.login-container h1{
+    margin: auto;
+    color: white;
+}
+.login-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+}
+.login-fields input{
+    height: 72px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    outline: none;
+    color: crimson;
+    font-size: 18px;
+}
+.login-container button{
+    width: 300px;
+    height: 72px;
+    color: crimson;
+    background: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.already-account{
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.already-account button{
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-weight: 550;
+    background: crimson;
+}
+.login-agree{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}

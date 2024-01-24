@@ -1,0 +1,43 @@
+.item{
+    width: 350px;
+    margin: auto;
+}
+.images{
+    height: 300px;
+    width: 300px;
+    
+}
+.item p{
+    margin: 6px 0px;
+    color: navy;
+    font-size: 18px;
+    font-weight: 600;
+    gap: 20px;
+}
+.item:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+} 
+
+.old-price{
+    color: gray;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.new-price{
+    color: navy;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.fa-star {
+    font-size: 20px;
+    color: gold;
+}

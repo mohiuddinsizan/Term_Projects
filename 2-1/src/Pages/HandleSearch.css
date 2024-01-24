@@ -1,0 +1,15 @@
+.banner-images{
+    display: block;
+    height: 500px;
+    width: 90%;
+    margin: auto;
+}
+.shop-cat-products{
+    display: flex;
+    margin-top: 50px;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
